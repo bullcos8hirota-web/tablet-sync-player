@@ -36,7 +36,7 @@
 
 1. PCに **Node.js** をインストールします（https://nodejs.org/ からLTS版）。
    - `npm install` は不要です。標準機能だけで動きます。
-2. この `sync-player/server/sync-server.js` をPCに置きます。
+2. この `server/sync-server.js` をPCに置きます。
 3. PCをスタジオのWi-Fiにつなぎ、コマンド（ターミナル / PowerShell）で起動します。
 
    ```
@@ -66,7 +66,7 @@
 
 - **動画ファイル**：そのタブレットで流したい動画を `exercise.mp4` という名前にします。
   - タブレットごとに中身は違ってOK。ただし **長さは全タブレット共通** にしてください（同期の前提）。
-- **システムファイル**：この `sync-player/tablet/index.html` を使います。
+- **システムファイル**：この `tablet/index.html` を使います。
   - `index.html` の先頭にある `server` を、手順1でメモした司令塔PCのアドレスに書き換えます。
 
   ```js
@@ -126,7 +126,7 @@
 ## ファイル構成
 
 ```
-sync-player/
+tablet-sync-player/
 ├── server/
 │   ├── sync-server.js               … 司令塔PCで動かすサーバー（Node.js標準機能のみ）
 │   └── start-server-windows.bat     … Windows用・ダブルクリック起動ファイル
